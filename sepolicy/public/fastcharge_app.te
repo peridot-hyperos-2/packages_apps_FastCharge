@@ -1,0 +1,2 @@
+type fastcharge_app, domain;
+typeattribute fastcharge_app mlstrustedsubject;

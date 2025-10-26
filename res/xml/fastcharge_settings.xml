@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2025 kenway214
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/fast_charge_title">
+
+    <PreferenceCategory>
+        <!-- FastCharge illustration -->
+        <com.android.fastcharge.ImagePreference
+            android:key="fastcharge_illustration"
+            android:selectable="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <ListPreference
+            android:key="wired_charging_mode"
+            android:title="@string/wired_charging_mode_title"
+            android:summary="@string/wired_charging_mode_summary"
+            android:defaultValue="1"
+            android:entries="@array/charging_mode_entries"
+            android:entryValues="@array/charging_mode_values" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

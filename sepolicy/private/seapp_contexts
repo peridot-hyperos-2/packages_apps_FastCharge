@@ -1,0 +1,3 @@
+#FastCharge
+user=system seinfo=platform isPrivApp=true name=com.android.fastcharge domain=fastcharge_app type=system_app_data_file levelFrom=all
+

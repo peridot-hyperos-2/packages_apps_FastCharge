@@ -1,0 +1,16 @@
+on boot
+    # Allow system to modify input_suspend
+    chown system system /sys/class/qcom-battery/input_suspend
+    chmod 0664 /sys/class/qcom-battery/input_suspend
+
+    # Allow system to modify night_charging
+    chown system system /sys/class/qcom-battery/night_charging
+    chmod 0664 /sys/class/qcom-battery/night_charging
+
+    # Allow system to modify fastcharge_enable
+    chown system system /sys/class/qcom-battery/fastcharge_enable
+    chmod 0664 /sys/class/qcom-battery/fastcharge_enable
+
+    # Allow system to modify charging current
+    chown system system /sys/class/power_supply/battery/constant_charge_current
+    chmod 0664 /sys/class/power_supply/battery/constant_charge_current

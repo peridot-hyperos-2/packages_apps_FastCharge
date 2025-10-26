@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2025 kenway214
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Charging mode entries -->
+    <string-array name="charging_mode_entries">
+        <item>@string/charging_mode_slow</item>
+        <item>@string/charging_mode_fast</item>
+        <item>@string/charging_mode_super_fast</item>
+    </string-array>
+
+    <!-- Charging mode values (0=Slow, 1=Fast, 2=Super Fast) -->
+    <string-array name="charging_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

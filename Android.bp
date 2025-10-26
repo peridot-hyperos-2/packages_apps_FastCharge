@@ -1,0 +1,38 @@
+//
+// Copyright (C) 2025 kenway214
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "FastCharge",
+    defaults: [
+        "SettingsLibDefaults",
+    ],
+
+    srcs: [
+        "src/**/*.kt",
+        "src/**/*.java"
+    ],
+
+    certificate: "platform",
+    resource_dirs: ["res"],
+    platform_apis: true,
+    system_ext_specific: true,
+    privileged: true,
+
+    static_libs: [
+        "androidx.core_core",
+        "org.lineageos.settings.resources"
+    ],
+
+    required: [
+        "privapp_whitelist_com.android.fastcharge.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_com.android.fastcharge.xml",
+    src: "permissions/privapp_whitelist_com.android.fastcharge.xml",
+    sub_dir: "permissions",
+    system_ext_specific: true,
+}

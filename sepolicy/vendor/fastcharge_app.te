@@ -1,0 +1,4 @@
+allow fastcharge_app vendor_sysfs_battery_supply:file rw_file_perms;
+allow fastcharge_app vendor_sysfs_battery_supply:file write;
+allow fastcharge_app vendor_sysfs_battery_supply:file { open read write };
+allow fastcharge_app vendor_sysfs_battery_supply:dir r_dir_perms;

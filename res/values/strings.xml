@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2025 kenway214
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Fast Charge -->
+    <string name="fast_charge_title">FastCharge</string>
+    <string name="fast_charge_summary">Configure wired charging speed for your device</string>
+    <string name="wired_charging_mode_title">Wired Charging Mode</string>
+    <string name="wired_charging_mode_summary">Select charging speed: Slow reduces heat, Super Fast charges quickly</string>
+    <string name="wired_charging_mode_not_supported">Wired Charging Mode is currently not supported by the kernel</string>
+    
+    <!-- Charging modes -->
+    <string name="charging_mode_slow">Slow</string>
+    <string name="charging_mode_fast">Fast</string>
+    <string name="charging_mode_super_fast">Super Fast</string>
+</resources>
