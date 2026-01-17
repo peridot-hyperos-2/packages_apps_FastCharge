@@ -29,8 +29,6 @@ allow fastcharge_app system_app_data_file:{ file lnk_file } create_file_perms;
 
 binder_call(fastcharge_app, gpuservice)
 
-get_prop(fastcharge_app, settingslib_prop)
-
 # Allow reading thermal sensor data
 r_dir_file(fastcharge_app, sysfs_thermal)
 allow fastcharge_app sysfs_thermal:file { read open };
